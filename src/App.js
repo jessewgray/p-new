@@ -13,22 +13,13 @@ function App() {
   return (
  
        <div className="App">
-          {/* <BrowserRouter>
+          <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login/" element={<Login />} />
                 <Route path="/register/" element={<Register />} />
             </Routes>
-          </BrowserRouter> */}
-          <BrowseRouter>
-            <switch>
-                <Route path="/" component={<Home />} />
-                <Route path="/login/" component={<Login />} />
-                <Route path="/register/" component={<Register />} />
-
-                <Redirect to="/" />
-            </switch>
-          </BrowseRouter>
+          </BrowserRouter>
         </div>
 
   );
