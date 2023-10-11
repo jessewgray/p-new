@@ -15,9 +15,12 @@ function App() {
        <div className="App">
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/login/" element={<Login />} />
-              <Route path="/register/" element={<Register />} />
+              <switch>
+                <Route path="/" element={<Home />} />
+                <Route path="/login/" element={<Login />} />
+                <Route path="/register/" element={<Register />} />
+              </switch>
+              <redirect to='/' />
             </Routes>
           </BrowserRouter>
         </div>
