@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 
 
-import {BrowserRouter, Switch, Routes, Route, Redirect} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, Redirect} from 'react-router-dom'
 import Register from './pages/Register';
 
 function App() {
@@ -21,13 +21,13 @@ function App() {
             </Routes>
           </BrowserRouter> */}
           <BrowseRouter>
-            <Switch>
+            <switch>
                 <Route path="/" component={<Home />} />
                 <Route path="/login/" component={<Login />} />
                 <Route path="/register/" component={<Register />} />
 
                 <Redirect to="/" />
-            </Switch>
+            </switch>
           </BrowseRouter>
         </div>
 
