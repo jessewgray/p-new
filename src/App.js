@@ -15,12 +15,9 @@ function App() {
        <div className="App">
           <BrowserRouter>
             <Routes>
-              <Switch>
                 <Route path="/" element={<Home />} />
                 <Route path="/login/" element={<Login />} />
                 <Route path="/register/" element={<Register />} />
-              </Switch>
-              <Redirect to='/' />
             </Routes>
           </BrowserRouter>
         </div>
