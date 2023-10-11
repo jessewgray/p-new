@@ -54,6 +54,7 @@ function DisplayInfo(){
                 return () => clearTimeout(timer);
               }, []);
               
+              console.log('tesing oct 11')
         
         return(
             <div className='container'>                

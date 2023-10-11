@@ -30,7 +30,7 @@ class AddNew extends Component{
     
       handleSubmit(event) {
         event.preventDefault();
-            let now = new Date;
+            let now = new Date();
             let nowString = now.toDateString();
 
             let user 
