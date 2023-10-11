@@ -15,12 +15,12 @@ function App() {
        <div className="App">
           <BrowserRouter>
             <Routes>
-              <switch>
+              <Switch>
                 <Route path="/" element={<Home />} />
                 <Route path="/login/" element={<Login />} />
                 <Route path="/register/" element={<Register />} />
-              </switch>
-              <redirect to='/' />
+              </Switch>
+              <Redirect to='/' />
             </Routes>
           </BrowserRouter>
         </div>
