@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 
 
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Switch, Routes, Route, Redirect} from 'react-router-dom'
 import Register from './pages/Register';
 
 function App() {
@@ -13,13 +13,22 @@ function App() {
   return (
  
        <div className="App">
-          <BrowserRouter>
+          {/* <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login/" element={<Login />} />
                 <Route path="/register/" element={<Register />} />
             </Routes>
-          </BrowserRouter>
+          </BrowserRouter> */}
+          <BrowseRouter>
+            <Switch>
+                <Route path="/" component={<Home />} />
+                <Route path="/login/" component={<Login />} />
+                <Route path="/register/" component={<Register />} />
+
+                <Redirect to="/" />
+            </Switch>
+          </BrowseRouter>
         </div>
 
   );
