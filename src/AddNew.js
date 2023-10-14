@@ -96,7 +96,8 @@ class AddNew extends Component{
             'border': 'solid 1px black',
             'padding': '5px 15px',
             'fontFamily': 'Permanent Marker, cursive',
-            'margin': '15px 0px'
+            'margin': '15px 0px',
+            'color':'black'
         }
 
 
@@ -113,7 +114,7 @@ class AddNew extends Component{
                         </label>
                         <textarea className="inputComment" type="text" style={textAreaStyle} value={this.state.comment} name={this.state.comment} onChange={this.handleChange} />
                         <div className='submitWrap'>
-                            <input type="submit" style={inputStyle} value="Post" />
+                            <button type="submit" style={inputStyle} value="Post" >Post</button>
                         </div>
                         
                     </form>
