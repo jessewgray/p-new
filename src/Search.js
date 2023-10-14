@@ -51,16 +51,8 @@ export default function Search(){
             'margin': 'auto',
             'padding': '5px'
         } 
-        const inputStyle = {
-            'background':'transparent',
-            'borderRadius': '5%',
-            'border': 'solid 1px black',
-            'padding': '5px 15px',
-            'fontFamily': 'Permanent Marker, cursive',
-            'margin': '15px 0px',
-            'color':'black'
-        }  
 
+        
         return(
             <div className="container theBoxShadow">
                 <div className='searchWrap' style={searchWrapStyle}>

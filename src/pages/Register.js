@@ -71,9 +71,17 @@ class Register extends Component{
             return (false)
           }
 
-            
-        
       }
+
+      inputStyle = {
+        'background':'transparent',
+        'borderRadius': '5%',
+        'border': 'solid 1px black',
+        'padding': '5px 15px',
+        'fontFamily': 'Permanent Marker, cursive',
+        'margin': '15px 0px',
+        'color':'black'
+    }  
 
     render(){
         return(
@@ -95,7 +103,7 @@ class Register extends Component{
                             </label>
                             <input className="password" type="password" value={this.state.password} name={this.state.password} onChange={this.handleChange} required/>
                             <p style={this.state.errorStyle}>Invalid Email</p>
-                            <button type='submit' value='Register' style={{color: 'black'}}>Register</button>
+                            <button type='submit' value='Register' style={this.inputStyle}>Register</button>
                         </form>
                     </div>
             </div>
