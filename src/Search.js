@@ -56,7 +56,6 @@ export default function Search(){
             'borderRadius': '5%',
             'border': 'solid 1px black',
             'padding': '5px 15px',
-            'font-family': 'Open Sans, sans-serif',
             'fontFamily': 'Permanent Marker, cursive',
             'margin': '15px 0px'
         }  
@@ -69,7 +68,7 @@ export default function Search(){
                     </label>
                     <input className="searchInput" style={searchStyle} type="text" value={message} name='message' onChange={handleChange}/>
                     <div className="submitWrap">
-                        <input type="submit" value="Search" style={inputStyle} onClick={handleSubmit} />
+                        <button type="submit" value="Search" style={inputStyle} onClick={handleSubmit} >Search</button>
                     </div>
                     
                 </div>
