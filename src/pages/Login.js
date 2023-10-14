@@ -6,8 +6,9 @@ class Login extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            username: '',
-            password: '',
+            username: 'Username',
+            password: 'Password',
+            errorStyle: {display: 'none'}
         };
     
         this.handleChange = this.handleChange.bind(this);
@@ -47,8 +48,15 @@ class Login extends Component{
                 )
                 window.location.href = "/"
             }else{
-                alert('wrong password or username');
-
+                this.setState ({
+                    errorStyle: {
+                        display:"block",
+                        width:"100%", 
+                        textAlign: "center", 
+                        paddingTop: "10px", 
+                        color: "purple"
+                    }
+                })
             }
           });
 
@@ -59,7 +67,9 @@ class Login extends Component{
         });
         
       }
+    
 
+     
 
     render(){
         return(
@@ -76,6 +86,9 @@ class Login extends Component{
                         </label>
                         <input className="password" type="password" value={this.state.password} name={this.state.password} onChange={this.handleChange} required/>
                         <a href="/register" style={{color: "#000000"}}>Create a new account</a>
+                        <div style={this.state.errorStyle}>
+                            <p>Incorrect username or password</p>
+                        </div>
                         <input type='submit' value='submit' />
                     </form>
                 </div>

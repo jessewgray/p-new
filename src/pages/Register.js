@@ -6,9 +6,10 @@ class Register extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            username: '',
-            email: '',
-            password: '',
+            username: 'Username',
+            email: 'Email',
+            password: 'Password',
+            errorStyle: {display:'none'}
         };
     
         this.handleChange = this.handleChange.bind(this);
@@ -57,7 +58,16 @@ class Register extends Component{
                 password:""
             });
           }else{
-            alert("You have entered an invalid email address!")
+            //alert("You have entered an invalid email address!")
+            this.setState({
+                errorStyle: {
+                    display: 'block',
+                    width:'100%',
+                    textAlign: 'center',
+                    paddingTop:'10px',
+                    color:'purple'
+                }
+            })
             return (false)
           }
 
@@ -84,6 +94,7 @@ class Register extends Component{
                                 <i className='fas fa-lock'></i>
                             </label>
                             <input className="password" type="password" value={this.state.password} name={this.state.password} onChange={this.handleChange} required/>
+                            <p style={this.state.errorStyle}>Invalid Email</p>
                             <input type='submit' value='Register' />
                         </form>
                     </div>
