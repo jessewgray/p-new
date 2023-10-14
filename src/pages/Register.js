@@ -95,7 +95,7 @@ class Register extends Component{
                             </label>
                             <input className="password" type="password" value={this.state.password} name={this.state.password} onChange={this.handleChange} required/>
                             <p style={this.state.errorStyle}>Invalid Email</p>
-                            <button type='submit' value='Register' >Register</button>
+                            <button type='submit' value='Register' style={{color: 'black'}}>Register</button>
                         </form>
                     </div>
             </div>

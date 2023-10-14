@@ -57,7 +57,8 @@ export default function Search(){
             'border': 'solid 1px black',
             'padding': '5px 15px',
             'fontFamily': 'Permanent Marker, cursive',
-            'margin': '15px 0px'
+            'margin': '15px 0px',
+            'color':'black'
         }  
 
         return(
