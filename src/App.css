@@ -34,7 +34,7 @@
     height: 50px;
     background-color: #00ff00;
     /* color: #000000; */
-    color:blue;
+    color:orange;
 }
 .login form input[type="password"], .login form input[type="text"] {
     width: 310px;
